@@ -1,10 +1,13 @@
+from unittest import result
 from django.shortcuts import render
 from django.http import HttpResponse
-import datetime
 
 def index(request):
     return HttpResponse("shhh calado")
 
-async def currentdate(request):
-    html = "<button>Home</button>."
-    return HttpResponse(html)
+def currentdate(request):
+    a = 2 + 2
+    cars = ["Honda", "Toyota", "Ferrari"]
+    context = {"result": a, "cars": cars}
+
+    return render(request, "index.html", context)

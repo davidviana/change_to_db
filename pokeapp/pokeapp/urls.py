@@ -18,9 +18,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from pokeapplication import views
 
 urlpatterns = [
-    path('home/', include('pokeapplication.urls')),
+    path('pokedex/', include('pokeapplication.urls')),
     path('admin/', admin.site.urls),
 ]
 
