@@ -10,3 +10,5 @@ for sheet in wb.sheet_names:
 
 con.commit()
 con.close()
+
+# Supporting construction: https://www.alixaprodev.com/2022/04/convert-excel-to-database-in-python.html
