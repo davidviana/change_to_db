@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import pandas as pd
 
-con = sql.connect('database.sqlite3')
+con = sql.connect('db.sqlite3')
 wb = pd.ExcelFile('PokemonStatus.xlsx')
 
 for sheet in wb.sheet_names:
