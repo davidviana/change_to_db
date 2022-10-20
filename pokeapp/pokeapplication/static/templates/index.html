@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Poke App</title>
+    {% load staticfiles %}
+    <!-- <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet"> -->
 </head>
 <body>
     <main>
@@ -14,7 +16,8 @@
         {% for car in cars %}
             <p>{{ car }}</p>
         {% endfor %}
-        <p>And the request: {{ request }}</p>
+
+        <link href="{% style.css %}" rel="stylesheet">
     </main>
 </body>
 </html>
