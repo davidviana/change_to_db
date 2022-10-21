@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+{% load static  %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Poke App</title>
+</head>
+
+<body>
+    <header id="menu-search">
+        <h1>
+            Pokédex
+        </h1>
+        <div id="search-pokemon">
+            <input type="text" placeholder="Search for a Pokemon">
+            <button type="submit" id="search-icon">
+                <img src="{% static 'search-icon.png' %}" alt="search-icon">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <img src="{% static '25.png' %}" alt="Pikachu">
+            <div class="status-info">
+                <p>Pikachu</p>
+                <p>N° 25</p>
+                <p>Primary Type:</p>
+                <p id="type-info">Electric</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+        <p>&copy; Created for <a href="https://github.com/davidviana" target="_blank">David Viana</a></p>
+    </footer>
+</body>
+
+</html>
